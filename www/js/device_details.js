@@ -52,10 +52,12 @@ var app = {
         var deviceName      = document.getElementById("device_name");
         var devicePlatform  = document.getElementById("device_platform");
         var deviceVersion   = document.getElementById("device_version");
+        var deviceReady     = document.getElementById("device_ready");
 
         deviceName.innerHTML        = deviceDetails.device_name;
         devicePlatform.innerHTML    = deviceDetails.device_platform;
         deviceVersion.innerHTML     = deviceDetails.device_version;
+        deviceReady.innerHTML       = "Device is ready!";
     },
 
     getDeviceDetails: function() {
